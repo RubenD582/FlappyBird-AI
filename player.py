@@ -107,7 +107,5 @@ class Player(pygame.sprite.Sprite):
     
 
     def lerp(self, value, start_min, start_max, end_min, end_max):
-        # Calculate the percentage of the value between start_min and start_max
         percentage = (value - start_min) / (start_max - start_min)
-        # Map the percentage to the range between end_min and end_max
         return end_min + percentage * (end_max - end_min)
